@@ -36,7 +36,6 @@ resource "aws_security_group" "blog" {
   vpc_id      = data.aws_vpc.default.id 
 }
 
-
 resource "aws_security_group_rule" "blog_http_in" {
   type              = "ingress"
   from_port         = 80
